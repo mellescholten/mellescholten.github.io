@@ -1,0 +1,190 @@
+:root {
+    --dark-blue:#0c2340;
+    --dark-gold: #ae9142;
+    --gold: #d39f10;
+    --cream: #f8f4ec;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    color: var(--dark-blue);
+}
+
+aside {
+    background: #0c2340;
+}
+nav ul {
+    list-style: none;
+}
+#mobile-menu {
+    position: relative;
+    font-size: 1.75em;
+    padding: 5px;
+    color:var(--gold);
+    border-bottom: 1px solid var(--dark-gold);
+}
+#menu-toggle {
+    float: right;
+    font-size: 110%;
+}
+#mobile-links {
+    position: absolute;
+    outline: 1px solid var(--dark-gold);
+    background-color: var(--dark-blue);
+    margin-top: 5px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 80px);
+    display:none;
+}
+#mobile-links li a {
+    display: inline-block; 
+    height: 100%; 
+    width: 100%;
+    font-size: 24px;
+    padding: 5px 5px 5px 15px;
+
+    border-image: linear-gradient(to right, transparent 0%, var(--dark-gold),transparent 100%) 1;
+    border-width: 1px;
+    border-style: solid;
+    border-top: unset;
+    border-left: unset;
+    border-right: unset;
+}
+#desktop-menu li a {
+    display: inline-block;
+    height: 100%; 
+    width: 100%;
+    font-size: 20px;
+    padding: 5px 5px 5px 15px;
+
+    border-image: linear-gradient(to right, transparent 0%, var(--dark-gold),transparent 100%) 1;
+    border-width: 1px;
+    border-style: solid;
+    border-top: unset;
+    border-left: unset;
+    border-right: unset;
+}
+#desktop-links > ul > li:last-child() > a {
+    border: none;
+}
+#mobile-links li a:hover, #desktop-menu li a:hover {
+    background: var(--gold);
+    color: var(--dark-blue);
+}
+
+#desktop-menu, #desktop-name {
+    display:none;
+}
+
+#desktop-menu {
+    color: var(--gold);
+}
+#headshot {
+    width: 200px;
+    height: 200px;
+    clip-path: circle(45%);
+}
+#headshot img {
+    width: inherit;
+}
+
+#desktop-name {
+    background: #efe9d9;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+#desktop-name p {
+    color: #143865;
+}
+
+#socials {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+address {
+    font-style: normal;
+    margin: 0 10px;
+    font-size: 24px;
+}
+address a {
+    text-decoration: none;
+}
+
+#linkedin {
+    margin: 0 10px;
+    background: #007bb6;
+    width: 27px;
+    height: 27px;
+    margin-top: 4px;
+    text-align: center;
+    border-radius: 4px;
+}
+#linkedin a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Georgia', sans-serif;
+}
+
+main {
+    background: var(--cream);
+    flex-grow: 1;
+    overflow: auto;
+    padding: 5px 10px;
+}
+section {
+    padding: 5px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid var(--dark-gold);
+    background: var(--dark-blue);
+    color:var(--gold)
+}
+footer a:hover {
+    background: var(--gold);
+    color: var(--dark-blue);
+}
+
+@media (min-width: 750px) {
+    body {
+        flex-direction: row;
+    }
+    aside {
+        height: 100%;
+        max-width: 200px;
+        width: 100%;
+        position: relative;
+    }
+    #mobile-menu {
+        display: none;
+    }
+    #desktop-menu, #desktop-name {
+        display: block;
+    }
+    footer {
+        position: absolute;
+    bottom: 0;
+    }
+}
