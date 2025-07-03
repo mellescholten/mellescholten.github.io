@@ -197,6 +197,9 @@ article ul, article ol {
         width: 100%;
         position: relative;
     }
+    main {
+        padding-bottom: 50px;
+    }
     #mobile-menu {
         display: none;
     }
