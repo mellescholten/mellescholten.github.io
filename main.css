@@ -64,6 +64,8 @@ nav ul {
     border-top: unset;
     border-left: unset;
     border-right: unset;
+    color: var(--dark-gold);
+    text-decoration: none;
 }
 #desktop-menu li a {
     display: inline-block;
@@ -78,6 +80,8 @@ nav ul {
     border-top: unset;
     border-left: unset;
     border-right: unset;
+    color: var(--dark-gold);
+    text-decoration: none;
 }
 #desktop-links > ul > li:last-child() > a {
     border: none;
@@ -114,7 +118,7 @@ nav ul {
 
 #socials {
     position: absolute;
-    bottom: 40px;
+    bottom: 50px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -160,13 +164,29 @@ footer {
     text-align: center;
     border-top: 1px solid var(--dark-gold);
     background: var(--dark-blue);
-    color:var(--gold)
+    color:var(--gold);
+    padding: 5px;
+}
+footer a {
+    color: var(--dark-gold);
 }
 footer a:hover {
     background: var(--gold);
     color: var(--dark-blue);
 }
-
+h1, h2, h3 {
+    margin: 0.5em;
+}
+article p {
+    max-width: 800px;
+    text-align: justify;
+    text-indent: 1em;
+}
+article ul, article ol {
+    margin: 1em;
+    padding-left: 1em;
+    max-width: 700px;
+}
 @media (min-width: 750px) {
     body {
         flex-direction: row;
@@ -176,6 +196,9 @@ footer a:hover {
         max-width: 200px;
         width: 100%;
         position: relative;
+    }
+    main {
+        padding-bottom: 50px;
     }
     #mobile-menu {
         display: none;
