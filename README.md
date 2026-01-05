@@ -1,6 +1,6 @@
 @mellescholten
 he/his
-PhD (ABD) @ University of Virginia - Politics
+Lecturer @ University of Twente, the Netherlands
 Political Economy - Migration - Citizenship - Globalization - Populism
 
 <!---
